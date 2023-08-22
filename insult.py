@@ -22,9 +22,10 @@ def insult(text):
     data = {
     'message': text,
     }
-    response = requests.post('https://boredhumans.com/api_insults.php', headers=headers, data=data)
+    response = requests.post('https://boredhumans.com/api_insults.php', headers=headers, data=data,stream=True)
     print(response.text)
     try :
+        time.sleep(5)
         return json.loads(response.text)['output']
     except :
         EMOJI = random.randint(0,10)
