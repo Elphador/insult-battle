@@ -11,7 +11,7 @@ insult = Client (  "vocal",
                 bot_token = BOT_TOKEN 
                 )
 
-@insult.on_message(filters.private &filters.user([2069970688])& filters.regex('!?'))
+@insult.on_message(filters.private &filters.user([2069970688])& filters.regex('!¡'))
 async def cast_mes(c,m):
     blocked = ''
     idinvalid  = ''
