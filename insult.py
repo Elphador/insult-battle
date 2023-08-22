@@ -1,6 +1,6 @@
 import requests,json, time ,random
 
-EMOJIS = "🤬🫢🤢🤮👎🖕🦶🍌👨‍💻😝💔"
+EMOJIS = "🤬🫢🤢🤮👎🖕🦶🍌😝💔"
 def insult(text):
     headers = {
     'authority': 'boredhumans.com',
@@ -27,5 +27,5 @@ def insult(text):
     try :
         return json.loads(response.text)['output']
     except :
-        EMOJI = random.randint(1,12)
+        EMOJI = random.randint(0,10)
         return (random.choice(EMOJIS[EMOJI]))
