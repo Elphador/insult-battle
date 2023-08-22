@@ -44,7 +44,7 @@ async def start(_, m):
     usr_id = m.from_user.id
     usr_username= m.from_user.username
     add_user(usr_name,usr_id ,usr_username)
-    await m.reply(f"**hi {usr_name} you bitch Cattle wanger how are you?\ninsult me once i kill you twice?**")
+    await m.reply(f"**hi {usr_name} you bitch Cattle wanger how are you?\ninsult me once i kill you twice?\n\n\ninvented @neuralp**")
 
         
                 
