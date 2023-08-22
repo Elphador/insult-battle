@@ -19,6 +19,7 @@ def insult(text):
     'sec-fetch-site': 'same-origin',
     'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
     'x-requested-with': 'XMLHttpRequest',}
+    text  = requests.utils.quote(text)
     data = {
     'message': text,
     }
