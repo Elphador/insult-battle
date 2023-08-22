@@ -1,6 +1,6 @@
 from config import *
 from database import *
-from insult import insult
+from insult import insult as inss
 import os
 from pyrogram import Client ,filters , enums
 from pyrogram.errors import *
@@ -60,7 +60,7 @@ async def letyou(c,m):
             return
     else :
         pass
-    ans = insult(m.text)
+    ans = inss(m.text)
     await m.reply(ans)
 print('everything is fine ')
 insult.run()
